@@ -1,10 +1,27 @@
+import 'package:acutal/common/const/data.dart';
+import 'package:acutal/common/dio/dio.dart';
 import 'package:acutal/common/model/cursor_pagination_model.dart';
 import 'package:acutal/restaurant/model/restaurant_detail_model.dart';
 import 'package:acutal/restaurant/model/restaurant_model.dart';
 import 'package:dio/dio.dart' hide Headers;
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'restaurant_repository.g.dart';
+
+final  restaurantRepositoryProvider = Provider(
+  (ref) {
+    final dio = ref.watch(dioProvider);
+
+    final repository = RestaurantRepository(
+      dio,
+      baseUrl: 'http://$ip/restaurant',
+    );
+
+    return repository;
+  },
+
+);
 
 @RestApi()
 abstract class RestaurantRepository {
@@ -16,7 +33,7 @@ abstract class RestaurantRepository {
   @Headers({
     'accessToken': 'true',
   })
-  Future<CursorPagination<RestaurantModel>>pageinate();
+  Future<CursorPagination<RestaurantModel>> pageinate();
 
   //http://$ip/restaurant/id
   @GET('/{id}')

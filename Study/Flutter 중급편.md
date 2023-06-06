@@ -223,3 +223,7 @@ final numberProvider = StateProvider<int>((ref) => 0);
 - ref.watch는 필수적으로 UI관련 코드에만 사용
 - ref.read는 실행되는 순간 단 한번만 Provider값을 가져온다.
 - ref.read는 onPressed 콜백처럼 특정 액션 뒤에 실행되는 함수 내부에서 사용된다.
+
+## flutter pub run build_runner build
+
+- generation 

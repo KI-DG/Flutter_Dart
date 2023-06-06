@@ -1,9 +1,14 @@
 import 'package:acutal/common/view/splash_screen.dart';
 import 'package:acutal/user/view/login_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(_App());
+  runApp(
+    ProviderScope(
+      child: _App(),
+    ),
+  );
 }
 
 class _App extends StatelessWidget {
