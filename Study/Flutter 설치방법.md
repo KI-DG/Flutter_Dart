@@ -1,19 +1,21 @@
 ## flutter 설치
 
-- chocolatey 검색 
 
-- https://chocolatey.org/install 들어가서 
-- powershell 에서 관리자 모드로 실행
-- `Get-ExecutionPolicy`. 
-- `Restricted`, 이거 뜨면
--  `Set-ExecutionPolicy AllSigned` 작성
-- Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) 설치
-- choco install flutter 하기
 
-옆에 탭에서 
+- ~~chocolatey 검색~~
 
-- android Studio 설치
-- 그리고 next후 설치 
+- ~~https://chocolatey.org/install 들어가서~~
+- ~~powershell 에서 관리자 모드로 실행~~
+- ~~`Get-ExecutionPolicy`.~~
+- ~~`Restricted`, 이거 뜨면~~
+- ~~`Set-ExecutionPolicy AllSigned` 작성~~
+- ~~Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) 설치~~
+- ~~choco install flutter 하기~~
+
+~~옆에 탭에서~~
+
+- ~~android Studio 설치~~
+- ~~그리고 next후 설치~~
 
 
 
